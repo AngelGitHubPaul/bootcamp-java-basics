@@ -45,4 +45,10 @@ public class Animal {
         System.out.println("Name: " + name);
         System.out.println("Color: " + color);
     }
+
+    // Polymorphism is the ability of an object to take on many forms.
+    // Dynamic or Run-time Polymorphism
+    public void walk(){
+        System.out.println("The animal is walking.");
+    }
 }

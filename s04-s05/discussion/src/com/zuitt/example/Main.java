@@ -43,5 +43,33 @@ public class Main {
         System.out.println(myPet.getBreed());
 
         myPet.speak();
+
+        System.out.println("Abstract: ");
+        Person newPerson = new Person();
+        newPerson.run();
+        newPerson.sleep();
+
+        Computer newComputer = new Computer();
+        newComputer.run();
+        newComputer.sleep();
+
+        System.out.println("Static Polymorphism:");
+
+        StaticPoly poly = new StaticPoly();
+        // Sum of two integer
+        int result1 = poly.add(5,3);
+        System.out.println("Sum of Two integer: " + result1);
+
+        // Sum of three integer
+        int result2 = poly.add(5,6,3);
+        System.out.println("Sum of three integer: " + result2);
+
+        // Sum of Two Double
+        double result3 = poly.add(5.5,5.5);
+        System.out.println("Sum of two double: " + result3);
+
+        System.out.println("Dynamic Polymorphism:");
+        myAnimal.walk();
+        myPet.walk();
     }
 }

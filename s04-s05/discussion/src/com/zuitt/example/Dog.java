@@ -30,4 +30,10 @@ public class Dog extends Animal {
         super.printDetails();
         System.out.println("Bark");
     }
+
+    // Polymorphism is the ability of an object to take on many forms.
+    // Dynamic or Run-time Polymorphism
+    public void walk(){
+        System.out.println("The dog is walking.");
+    }
 }
